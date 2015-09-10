@@ -10,30 +10,142 @@
 	<header>
 		<nav>
 			<ul class="menu">
-				<li><a href="">1</a></li>
-				<li><a href="">2</a></li>
-				<li><a href="">3</a></li>
-				<li><a href="">1</a></li>
-				<li><a href="">2</a></li>
-				<li class="nav-account"><a href="">3111111111111</a></li>
+				<li><a href=""></a></li>
+				<li class="nav-menu"><a href=""></a></li>
+				<li class="nav-info"><a href=""></a></li>
+				<li class="nav-favorite"><a href=""></a></li>
+				<li class="nav-message"><a href=""></a></li>
+				<li class="nav-account">
+					<a href="">
+						Max Mustermann <br />
+						<span>Notariat</span>
+					</a>
+				</li>
 			</ul>
 		</nav>
 	</header>
-	<aside>
-		asd
-	</aside>
-	<div class="main-container">
-		<h2 class="title">
-			Personenverzeichnis
-			<a class="favorite n-favorite" onclick="this.className = (this.className == 'favorite n-favorite' ? 'favorite y-favorite' : 'favorite n-favorite')"></a>
-		</h2>
-		<p>
-			XNotar | Anwendungen | Personenverzeichnis
-		</p>
 
-		<div class="content">
+	<div class="wrapper">
+		<aside>
 
+		<!-- ASIDE BLOCK -->
+			<ul class="aside-menu">
+				<li>
+					<a href="">Menupunkt1</a>
+
+					<ul class="aside-menu__inner">
+						<li>
+							<a href="">1.1 Lorem ipsum</a>
+
+							<ul class="aside-menu__inner-invested">
+								<li><a href="">2.1 Lorem ipsun</a></li>
+								<li><a href="">2.2 Lorem ipsum</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="">1.2 Lorem ipsum</a>
+
+							<ul class="aside-menu__inner-invested">
+								<li><a href="">2.1 Lorem ipsun</a></li>
+								<li><a href="">2.2 Lorem ipsum</a></li>
+								<li><a href="">2.1 Lorem ipsun</a></li>
+								<li><a href="">2.2 Lorem ipsum</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="">1.3 Lorem ipsum</a>
+							<ul class="aside-menu__inner-invested">
+								<li><a href="">2.1 Lorem ipsun</a></li>
+								<li><a href="">2.2 Lorem ipsum</a></li>
+								<li><a href="">2.1 Lorem ipsun</a></li>
+								<li><a href="">2.2 Lorem ipsum</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="">Menupunkt2</a></li>
+				<li><a href="">Menupunkt3</a></li>
+			</ul>
+		<!-- ************** -->
+		<a href="" class="turn-aside"></a>
+		<!-- ASIDE BLOCK -->
+			<ul class="aside-menu aside-menu__liners">
+				<li>
+					<a href="" class="icon-point quicklinks">Quicklinks</a>
+				</li>
+				<li>
+					<a href="" class="icon-point doings">Termine</a>
+
+					<ul class="aside-menu__inner">
+						<li>
+							<a href="">
+								<time datetime="2015">19. 03. 2015</time> <br>
+								1.1 Lorem ipsum
+								</a>
+
+						</li>
+						<li>
+							<a href="">
+								<time datetime="2015">19. 03. 2015</time> <br>
+								1.1 Lorem ipsum
+								</a>
+
+						</li>
+						<li><a href="">alle Termine</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="" class="icon-point loading-progress">Ladefortschritt</a>
+				</li>
+			</ul>
+		<!-- ************** -->
+		</aside>		
+		<div class="main-container">
+			<h2 class="title">
+				Personenverzeichnis
+				<a class="favorite n-favorite" onclick="this.className = (this.className == 'favorite n-favorite' ? 'favorite y-favorite' : 'favorite n-favorite')"></a>
+			</h2>
+			<p>
+				XNotar | Anwendungen | Personenverzeichnis
+			</p>
+
+			<div class="content">
+			<table>
+				<tr>
+					<th>titel</th>
+					<th>name</th>
+					<th>anschrift</th>
+					<th>gebartsdatum</th>
+					<th>optionen</th>
+				</tr>
+				<tr>
+					<td>Dr</td>
+					<td>Bernadette Hohenstein</td>
+					<td>96496 Coburg, Lorem ipsum, Loreeem</td>
+					<td>24.01.1999</td>
+					<td>
+						<a href="" class="table-edit">
+							<img src="images/icon-edit.png">
+						</a>
+						<a href="" class="table-clear">
+							<img src="images/icon-clear.png">
+						</a>
+						<a href="" class="table-menu">
+							<img src="images/icon-table-menu.png">
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>Dr</td>
+					<td>Bernadette Hohenstein</td>
+					<td>96496 Coburg, Lorem ipsum, Loreeem</td>
+					<td>1</td>
+					<td>2</td>
+				</tr>
+			</table>
+			</div>
 		</div>
 	</div>
+
 </body>
 </html>
