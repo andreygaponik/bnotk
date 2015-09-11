@@ -4,17 +4,27 @@
 	<title>bnotk</title>
 	<meta charset="utf-8">
 	<link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,300,300italic,400italic,500&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href="css/select2.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/select2.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
 	<header>
+		<h1></h1>
 		<nav>
 			<ul class="menu">
 				<li><a href=""></a></li>
 				<li class="nav-menu"><a href=""></a></li>
 				<li class="nav-info"><a href=""></a></li>
 				<li class="nav-favorite"><a href=""></a></li>
-				<li class="nav-message"><a href=""></a></li>
+				<li class="nav-message">
+					<a href="">
+						<span class="mess-counter">5</span>
+					</a>
+				</li>
 				<li class="nav-account">
 					<a href="">
 						Max Mustermann <br />
@@ -26,7 +36,7 @@
 	</header>
 
 	<div class="wrapper">
-		<aside>
+		<aside class="aside-open">
 
 		<!-- ASIDE BLOCK -->
 			<ul class="aside-menu">
@@ -96,6 +106,38 @@
 				</li>
 				<li>
 					<a href="" class="icon-point loading-progress">Ladefortschritt</a>
+					asd<br>
+					sa<br>
+					sda<br>
+					sa<br>
+					sas<br>
+					adas<br>
+					sad
+					<br>
+					asd<br>
+					sa<br>
+					sda<br>
+					sa<br>
+					sas<br>
+					adas<br>
+					asd<br>
+					sa<br>
+					sda<br>
+					sa<br>
+					sas<br>
+					adas<br>
+					asd<br>
+					sa<br>
+					sda<br>
+					sa<br>
+					sas<br>
+					adas<br>
+					asd<br>
+					sa<br>
+					sda<br>
+					sa<br>
+					sas<br>
+					123<br>
 				</li>
 			</ul>
 		<!-- ************** -->
@@ -110,42 +152,225 @@
 			</p>
 
 			<div class="content">
-			<table>
-				<tr>
-					<th>titel</th>
-					<th>name</th>
-					<th>anschrift</th>
-					<th>gebartsdatum</th>
-					<th>optionen</th>
-				</tr>
-				<tr>
-					<td>Dr</td>
-					<td>Bernadette Hohenstein</td>
-					<td>96496 Coburg, Lorem ipsum, Loreeem</td>
-					<td>24.01.1999</td>
-					<td>
-						<a href="" class="table-edit">
-							<img src="images/icon-edit.png">
-						</a>
-						<a href="" class="table-clear">
-							<img src="images/icon-clear.png">
-						</a>
-						<a href="" class="table-menu">
-							<img src="images/icon-table-menu.png">
-						</a>
-					</td>
-				</tr>
-				<tr>
-					<td>Dr</td>
-					<td>Bernadette Hohenstein</td>
-					<td>96496 Coburg, Lorem ipsum, Loreeem</td>
-					<td>1</td>
-					<td>2</td>
-				</tr>
-			</table>
+				<form class="form-search main-search">
+				<input type="submit" value="Suchoptionen" class="btn"/>	
+				<input type="text" placeholder="Search" class="search"/>
+					
+				</form>
+				<table>
+					<tr>
+						<th>titel</th>
+						<th>name</th>
+						<th class="icon-address">
+							anschrift
+							<a href=""></a>
+						</th>
+						<th>gebartsdatum</th>
+						<th>optionen</th>
+					</tr>
+					<tr>
+						<td>
+							<input type="checkbox" id="checkbox1" /> <label for="checkbox1"></label>
+							Dr
+						</td>
+						<td>Bernadette Hohenstein</td>
+						<td>96496 Coburg, Lorem ipsum, Loreeem</td>
+						<td>24.01.1999</td>
+						<td>
+							<a href="" class="table-edit">
+								<img src="images/icon-edit.png">
+							</a>
+							<a href="" class="table-clear">
+								<img src="images/icon-clear.png">
+							</a>
+							<a href="" class="table-menu">
+								<img src="images/icon-table-menu.png">
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="checkbox" id="checkbox2" /> <label for="checkbox2"></label>
+							Dr
+						</td>
+						<td>Bernadette Hohenstein</td>
+						<td>96496 Coburg, Lorem ipsum, Loreeem</td>
+						<td>1</td>
+						<td>
+							<a href="" class="table-edit">
+								<img src="images/icon-edit.png">
+							</a>
+							<a href="" class="table-clear">
+								<img src="images/icon-clear.png">
+							</a>
+							<a href="" class="table-menu">
+								<img src="images/icon-table-menu.png">
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="checkbox" id="checkbox3" /> <label for="checkbox3"></label>
+							
+						</td>
+						<td>Bernadette Hohenstein</td>
+						<td>96496 Coburg, Lorem ipsum, Loreeem</td>
+						<td>1</td>
+						<td>
+							<a href="" class="table-edit">
+								<img src="images/icon-edit.png">
+							</a>
+							<a href="" class="table-clear">
+								<img src="images/icon-clear.png">
+							</a>
+							<a href="" class="table-menu">
+								<img src="images/icon-table-menu.png">
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="checkbox" id="checkbox4" /> <label for="checkbox4"></label>
+							
+						</td>
+						<td>Bernadette Hohenstein</td>
+						<td>96496 Coburg, Lorem ipsum, Loreeem</td>
+						<td>1</td>
+						<td>
+							<a href="" class="table-edit">
+								<img src="images/icon-edit.png">
+							</a>
+							<a href="" class="table-clear">
+								<img src="images/icon-clear.png">
+							</a>
+							<a href="" class="table-menu">
+								<img src="images/icon-table-menu.png">
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="checkbox" id="checkbox5" /> <label for="checkbox5"></label>
+							
+						</td>
+						<td>Bernadette Hohenstein</td>
+						<td>96496 Coburg, Lorem ipsum, Loreeem</td>
+						<td>1</td>
+						<td>
+							<a href="" class="table-edit">
+								<img src="images/icon-edit.png">
+							</a>
+							<a href="" class="table-clear">
+								<img src="images/icon-clear.png">
+							</a>
+							<a href="" class="table-menu">
+								<img src="images/icon-table-menu.png">
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="checkbox" id="checkbox5" /> <label for="checkbox5"></label>
+							
+						</td>
+						<td>Bernadette Hohenstein</td>
+						<td>96496 Coburg, Lorem ipsum, Loreeem</td>
+						<td>1</td>
+						<td>
+							<a href="" class="table-edit">
+								<img src="images/icon-edit.png">
+							</a>
+							<a href="" class="table-clear">
+								<img src="images/icon-clear.png">
+							</a>
+							<a href="" class="table-menu">
+								<img src="images/icon-table-menu.png">
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="checkbox" id="checkbox5" /> <label for="checkbox5"></label>
+							
+						</td>
+						<td>Bernadette Hohenstein</td>
+						<td>96496 Coburg, Lorem ipsum, Loreeem</td>
+						<td>1</td>
+						<td>
+							<a href="" class="table-edit">
+								<img src="images/icon-edit.png">
+							</a>
+							<a href="" class="table-clear">
+								<img src="images/icon-clear.png">
+							</a>
+							<a href="" class="table-menu">
+								<img src="images/icon-table-menu.png">
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="checkbox" id="checkbox5" /> <label for="checkbox5"></label>
+							
+						</td>
+						<td>Bernadette Hohenstein</td>
+						<td>96496 Coburg, Lorem ipsum, Loreeem</td>
+						<td>1</td>
+						<td>
+							<a href="" class="table-edit">
+								<img src="images/icon-edit.png">
+							</a>
+							<a href="" class="table-clear">
+								<img src="images/icon-clear.png">
+							</a>
+							<a href="" class="table-menu">
+								<img src="images/icon-table-menu.png">
+							</a>
+						</td>
+					</tr>
+				</table>
+
+				<div class="btn-box">
+					<button class="btn">Alle auswahlen</button>
+					<select class="js-example-basic-single">
+					  <option value="AL">Auswahl bearbeiten</option>
+					  <option value="WY">Lorem ipsum</option>
+					  <option value="WY">Lorem ipsum</option>
+					  <option value="WY">Lorem ipsum</option>
+					</select>
+					<button class="btn btn-add">Neue Person</button>
+				</div>
+				
+				<div class="page-block">
+					<select class="js-example-basic-single">
+					  <option value="AL">20</option>
+					  <option value="WY">19</option>
+					  <option value="WY">18</option>
+					</select>
+				</div>
+				<div class="pagination">
+					<a href="" class="pagination-prev">Seite</a>
+					<input type="text" />
+					<a href="" class="pagination-next">von 26</a>
+				</div>
 			</div>
 		</div>
 	</div>
+
+	<!-- custom scrollbar plugin -->
+	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+	
+	<script>
+		(function($){
+			$(window).load(function(){
+				
+				$("aside").mCustomScrollbar({
+					theme:"minimal"
+				});
+				
+			});
+		})(jQuery);
+	</script>
 
 </body>
 </html>
