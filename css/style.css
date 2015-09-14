@@ -10,11 +10,16 @@
 	-o-box-sizing: border-box;
 }
 
+html {
+	height: 100%;
+}
+
 body {
 	margin: 0;
 	font-family: 'Fira Sans', sans-serif;
 	background: #f0f0f0;
 	overflow: hidden;
+	height: 100%;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -23,6 +28,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .wrapper {
 	overflow: hidden;
+	height: 100%;
 	background: #f0f0f0;;
 }
 
@@ -39,8 +45,9 @@ header {
 	background: #ffffff;
 	width: 100%;
 	min-height: 64px;
-	background: #fffff;	
 	padding: 0 3%;
+	position: relative;
+	z-index: 999999;
 }
 
 h1 {
@@ -249,10 +256,9 @@ aside {
 	background: #063c5f;
 	color: #fff;
 	height: 100%;
-	min-height: 600px;
-	float: left;
 	position: absolute;
 	overflow: visible;
+	padding-bottom: 350px;
 	/* overflow-y: scroll; */
 }
 
@@ -270,6 +276,16 @@ aside .aside-menu li {
 	border-bottom: 1px solid #53778f
 }
 
+aside .aside-menu li .link {
+	font-weight: 300;
+	font-size: 17px;
+	color: #ffffff;
+	text-decoration: none;
+	line-height: 190%;
+	display: block;
+	cursor: pointer;
+}
+
 aside .aside-menu li a {
 	font-weight: 300;
 	font-size: 17px;
@@ -279,7 +295,7 @@ aside .aside-menu li a {
 	display: block;
 }
 
-aside .aside-menu li a:hover {
+aside .aside-menu li a:hover, aside .aside-menu li .link:hover {
 	font-weight: 400;
 }
 
@@ -326,6 +342,7 @@ aside .aside-menu .aside-menu__inner .aside-menu__inner-invested li a:hover {
 	height: 38px;
 	width: 100%;
 	position: relative;
+	z-index: 999999;
 }
 
 /* BOTTOM LIST */
@@ -353,6 +370,10 @@ aside .aside-menu .aside-menu__inner .aside-menu__inner-invested li a:hover {
 	background-size: 196%;
 }
 
+.aside-menu__liners .link:hover {
+	color: #f5ac19
+}
+
 .aside-menu__liners .icon-point:hover:before {
 	background: url(../images/icon-arrow-sprite-active.png) 0 50% no-repeat;
 	background-size: 196%;
@@ -377,16 +398,20 @@ aside .aside-menu .aside-menu__inner .aside-menu__inner-invested li a:hover {
 	margin-top: 13px;
 }
 
-.aside-menu__liners .aside-menu__inner li:last-child a {
-	color: #faae4f;
+.aside-menu__liners .aside-menu__inner li:last-child .link {
 	padding-top: 8px;
+	line-height: 130%;
+	padding: 0 10%;
+	padding-bottom: 13px;
+	color: #f5ac19;
+	font-size: 15px;
 }
 
-.aside-menu__liners .aside-menu__inner li:last-child a:active {
+.aside-menu__liners .aside-menu__inner li:last-child .link:active {
 	color: #faae4f;
 }
 
-.aside-menu__liners .aside-menu__inner li:last-child a:hover {
+.aside-menu__liners .aside-menu__inner li:last-child .link:hover {
 	color: #bbbbbb;
 }
 
@@ -399,7 +424,7 @@ aside .aside-menu .aside-menu__inner .aside-menu__inner-invested li a:hover {
 	display: block;
 	width: 23px;
 	height: 23px;
-	background: url(../images/qicklinks.png) 0 0 no-repeat;
+	background: url(../images/qicklinks.png) 0 50% no-repeat;
 	background-size: 100%;
 	float: left;
 	margin-right: 12px;
@@ -410,7 +435,7 @@ aside .aside-menu .aside-menu__inner .aside-menu__inner-invested li a:hover {
 }
 
 .aside-menu__liners .quicklinks:hover:after {
-	background: url(../images/qicklinks-active.png) 0 0 no-repeat;
+	background: url(../images/qicklinks-active.png) 0 50% no-repeat;
 	background-size: 100%;
 }
 
@@ -419,15 +444,14 @@ aside .aside-menu .aside-menu__inner .aside-menu__inner-invested li a:hover {
 	display: block;
 	width: 21px;
 	height: 21px;
-	background: url(../images/icon-doings.png) 0 0 no-repeat;
+	background: url(../images/icon-doings.png) 0 50% no-repeat;
 	background-size: 100%;
 	float: left;
 	margin-right: 12px;
-	margin-top: -3px;
 }
 
 .aside-menu__liners .doings:hover:after {
-	background: url(../images/icon-doings-active.png) 0 0 no-repeat;
+	background: url(../images/icon-doings-active.png) 0 50% no-repeat;
 	background-size: 100%;
 }
 
@@ -436,18 +460,67 @@ aside .aside-menu .aside-menu__inner .aside-menu__inner-invested li a:hover {
 	display: block;
 	width: 21px;
 	height: 21px;
-	background: url(../images/icon-loading.png) 0 0 no-repeat;
+	background: url(../images/icon-loading.png) 0 50% no-repeat;
 	background-size: 100%;
 	float: left;
 	margin-right: 12px;
-	margin-top: -3px;
 }
 
 .aside-menu__liners .loading-progress:hover:after {
-	background: url(../images/icon-loading-active.png) 0 0 no-repeat;
+	background: url(../images/icon-loading-active.png) 0 50% no-repeat;
 	background-size: 100%;
 }
 
+.aside-menu__liners li:last-child {
+	border: none;
+}
+
+.aside-menu__liners .aside-progress-bar {
+	overflow: hidden;
+}
+
+.aside-menu__liners .aside-progress-bar__container {
+	padding: 0 10%;
+	overflow: hidden;
+}
+
+.aside-menu__liners .aside-progress-bar__container li {
+	margin-bottom: 25px;
+	overflow: hidden;
+	border: none;
+}
+
+.aside-menu__liners .aside-progress-bar__container li p {
+	font-weight: 300;
+	float: left;
+}
+
+.aside-menu__liners .aside-progress-bar__container .band {
+	height: 6px;
+	width: 100%;
+	float: left;
+	width: 80%;
+	margin-top: 2px;
+	background: #fff
+}
+
+.aside-menu__liners .aside-progress-bar__container .band .width-40 {
+	width: 40% !important;
+}
+
+.aside-menu__liners .aside-progress-bar__container .band .load {
+	width: 90%;
+	background: #feb012;
+	height: 100%;
+}
+
+.aside-menu__liners .aside-progress-bar__container span {
+	display: block;
+	float: right;
+	width: 20%;
+	text-align: center;
+	margin-top: -3px;
+}
 
 /* =============================== */
 
@@ -459,6 +532,9 @@ aside .aside-menu .aside-menu__inner .aside-menu__inner-invested li a:hover {
 	float: left;
 	width: 80%;
 	margin-left: 20%;
+
+	height: 100%;
+	overflow: hidden;
 }
 
 .main-container .title {
@@ -500,6 +576,10 @@ aside .aside-menu .aside-menu__inner .aside-menu__inner-invested li a:hover {
 	background: #ffffff;
 	width: 100%;
 	padding: 30px;
+	height: 100%;
+	position: relative;
+
+	height: 80%;
 }
 
 .content .form-search {
@@ -551,8 +631,21 @@ aside .aside-menu .aside-menu__inner .aside-menu__inner-invested li a:hover {
 	outline: none;
 }
 
+.btn-container {
+	background: #fff;
+	width: 100%;
+	overflow: hidden;
+	height: 40px;
+	position: absolute;
+	left: 0;
+	bottom: 4%
+}
+
 .btn-box {
 	float: left;
+	position: absolute;
+	left: 30px;
+	bottom: 4%;
 }
 
 .btn-box .btn {
@@ -580,6 +673,9 @@ aside .aside-menu .aside-menu__inner .aside-menu__inner-invested li a:hover {
 .pagination {
 	float: right;
 	margin-top: 1px;
+	position: absolute;
+	bottom: 4%;
+	right: 130px;
 	margin-right: 15px;
 }
 
@@ -611,17 +707,35 @@ aside .aside-menu .aside-menu__inner .aside-menu__inner-invested li a:hover {
 
 .page-block {
 	float: right;
+	position: absolute;
+	bottom: 4%;
+	right: 30px;
 }
 
 .page-block .select2-container .select2-choice {
 	color: #000;
 }
+.table-container {
+	overflow: hidden !important;
+	background: #ffffff;
+	width: 100%;
+	height: 100%;
+	position: absolute;
 
+	left: 0;
+	padding: 0 30px;
+	margin-top: 45px;
+	height: 76%;
+
+}
 .content table {
 	width: 100%;
 	text-align: left;
 	border-collapse: collapse;
 	margin: 15px 0;
+	height: 100%;
+
+	margin: 0;
 }
 
 .content table tr:first-child {

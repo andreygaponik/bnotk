@@ -36,16 +36,16 @@
 	</header>
 
 	<div class="wrapper">
-		<aside class="aside-open">
+		<aside>
 
 		<!-- ASIDE BLOCK -->
 			<ul class="aside-menu">
 				<li>
-					<a href="">Menupunkt1</a>
+					<div class="link">Menupunkt1</div>
 
 					<ul class="aside-menu__inner">
 						<li>
-							<a href="">1.1 Lorem ipsum</a>
+							<a>1.1 Lorem ipsum</a>
 
 							<ul class="aside-menu__inner-invested">
 								<li><a href="">2.1 Lorem ipsun</a></li>
@@ -77,14 +77,14 @@
 				<li><a href="">Menupunkt3</a></li>
 			</ul>
 		<!-- ************** -->
-		<a href="" class="turn-aside"></a>
+		<a href="" class="turn-aside aside-open"></a>
 		<!-- ASIDE BLOCK -->
 			<ul class="aside-menu aside-menu__liners">
 				<li>
-					<a href="" class="icon-point quicklinks">Quicklinks</a>
+					<div class="icon-point quicklinks link">Quicklinks</div>
 				</li>
 				<li>
-					<a href="" class="icon-point doings">Termine</a>
+					<div class="icon-point doings link">Termine</div>
 
 					<ul class="aside-menu__inner">
 						<li>
@@ -101,43 +101,31 @@
 								</a>
 
 						</li>
-						<li><a href="">alle Termine</a></li>
+						<li><div class="link">alle Termine</div></li>
 					</ul>
 				</li>
 				<li>
-					<a href="" class="icon-point loading-progress">Ladefortschritt</a>
-					asd<br>
-					sa<br>
-					sda<br>
-					sa<br>
-					sas<br>
-					adas<br>
-					sad
-					<br>
-					asd<br>
-					sa<br>
-					sda<br>
-					sa<br>
-					sas<br>
-					adas<br>
-					asd<br>
-					sa<br>
-					sda<br>
-					sa<br>
-					sas<br>
-					adas<br>
-					asd<br>
-					sa<br>
-					sda<br>
-					sa<br>
-					sas<br>
-					adas<br>
-					asd<br>
-					sa<br>
-					sda<br>
-					sa<br>
-					sas<br>
-					123<br>
+					<div class="icon-point loading-progress link">Ladefortschritt</div>
+					<ul class="aside-progress-bar__container aside-menu__inner">
+						<li>
+							<div class="aside-progress-bar">
+								<div class="band">
+									<div class="load"></div>
+								</div>
+								<span>90%</span>
+							</div>
+							<p>Lade Dokument "Lorem ipsum set Arte dolores"</p>
+						</li>
+						<li>
+							<div class="aside-progress-bar">
+								<div class="band">
+									<div class="load width-40"></div>
+								</div>
+								<span>40%</span>
+							</div>
+							<p> Import Tabelle.csv</p>
+						</li>
+					</ul>
 				</li>
 			</ul>
 		<!-- ************** -->
@@ -157,202 +145,388 @@
 				<input type="text" placeholder="Search" class="search"/>
 					
 				</form>
-				<table>
-					<tr>
-						<th>titel</th>
-						<th>name</th>
-						<th class="icon-address">
-							anschrift
-							<a href=""></a>
-						</th>
-						<th>gebartsdatum</th>
-						<th>optionen</th>
-					</tr>
-					<tr>
-						<td>
-							<input type="checkbox" id="checkbox1" /> <label for="checkbox1"></label>
-							Dr
-						</td>
-						<td>Bernadette Hohenstein</td>
-						<td>96496 Coburg, Lorem ipsum, Loreeem</td>
-						<td>24.01.1999</td>
-						<td>
-							<a href="" class="table-edit">
-								<img src="images/icon-edit.png">
-							</a>
-							<a href="" class="table-clear">
-								<img src="images/icon-clear.png">
-							</a>
-							<a href="" class="table-menu">
-								<img src="images/icon-table-menu.png">
-							</a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<input type="checkbox" id="checkbox2" /> <label for="checkbox2"></label>
-							Dr
-						</td>
-						<td>Bernadette Hohenstein</td>
-						<td>96496 Coburg, Lorem ipsum, Loreeem</td>
-						<td>1</td>
-						<td>
-							<a href="" class="table-edit">
-								<img src="images/icon-edit.png">
-							</a>
-							<a href="" class="table-clear">
-								<img src="images/icon-clear.png">
-							</a>
-							<a href="" class="table-menu">
-								<img src="images/icon-table-menu.png">
-							</a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<input type="checkbox" id="checkbox3" /> <label for="checkbox3"></label>
-							
-						</td>
-						<td>Bernadette Hohenstein</td>
-						<td>96496 Coburg, Lorem ipsum, Loreeem</td>
-						<td>1</td>
-						<td>
-							<a href="" class="table-edit">
-								<img src="images/icon-edit.png">
-							</a>
-							<a href="" class="table-clear">
-								<img src="images/icon-clear.png">
-							</a>
-							<a href="" class="table-menu">
-								<img src="images/icon-table-menu.png">
-							</a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<input type="checkbox" id="checkbox4" /> <label for="checkbox4"></label>
-							
-						</td>
-						<td>Bernadette Hohenstein</td>
-						<td>96496 Coburg, Lorem ipsum, Loreeem</td>
-						<td>1</td>
-						<td>
-							<a href="" class="table-edit">
-								<img src="images/icon-edit.png">
-							</a>
-							<a href="" class="table-clear">
-								<img src="images/icon-clear.png">
-							</a>
-							<a href="" class="table-menu">
-								<img src="images/icon-table-menu.png">
-							</a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<input type="checkbox" id="checkbox5" /> <label for="checkbox5"></label>
-							
-						</td>
-						<td>Bernadette Hohenstein</td>
-						<td>96496 Coburg, Lorem ipsum, Loreeem</td>
-						<td>1</td>
-						<td>
-							<a href="" class="table-edit">
-								<img src="images/icon-edit.png">
-							</a>
-							<a href="" class="table-clear">
-								<img src="images/icon-clear.png">
-							</a>
-							<a href="" class="table-menu">
-								<img src="images/icon-table-menu.png">
-							</a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<input type="checkbox" id="checkbox5" /> <label for="checkbox5"></label>
-							
-						</td>
-						<td>Bernadette Hohenstein</td>
-						<td>96496 Coburg, Lorem ipsum, Loreeem</td>
-						<td>1</td>
-						<td>
-							<a href="" class="table-edit">
-								<img src="images/icon-edit.png">
-							</a>
-							<a href="" class="table-clear">
-								<img src="images/icon-clear.png">
-							</a>
-							<a href="" class="table-menu">
-								<img src="images/icon-table-menu.png">
-							</a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<input type="checkbox" id="checkbox5" /> <label for="checkbox5"></label>
-							
-						</td>
-						<td>Bernadette Hohenstein</td>
-						<td>96496 Coburg, Lorem ipsum, Loreeem</td>
-						<td>1</td>
-						<td>
-							<a href="" class="table-edit">
-								<img src="images/icon-edit.png">
-							</a>
-							<a href="" class="table-clear">
-								<img src="images/icon-clear.png">
-							</a>
-							<a href="" class="table-menu">
-								<img src="images/icon-table-menu.png">
-							</a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<input type="checkbox" id="checkbox5" /> <label for="checkbox5"></label>
-							
-						</td>
-						<td>Bernadette Hohenstein</td>
-						<td>96496 Coburg, Lorem ipsum, Loreeem</td>
-						<td>1</td>
-						<td>
-							<a href="" class="table-edit">
-								<img src="images/icon-edit.png">
-							</a>
-							<a href="" class="table-clear">
-								<img src="images/icon-clear.png">
-							</a>
-							<a href="" class="table-menu">
-								<img src="images/icon-table-menu.png">
-							</a>
-						</td>
-					</tr>
-				</table>
+				<div class="table-container">
+					<table>
+						<tr>
+							<th>titel</th>
+							<th>name</th>
+							<th class="icon-address">
+								anschrift
+								<a href=""></a>
+							</th>
+							<th>gebartsdatum</th>
+							<th>optionen</th>
+						</tr>
+						<tr>
+							<td>
+								<input type="checkbox" id="checkbox1" /> <label for="checkbox1"></label>
+								Dr
+							</td>
+							<td>Bernadette Hohenstein</td>
+							<td>96496 Coburg, Lorem ipsum, Loreeem</td>
+							<td>24.01.1999</td>
+							<td>
+								<a href="" class="table-edit">
+									<img src="images/icon-edit.png">
+								</a>
+								<a href="" class="table-clear">
+									<img src="images/icon-clear.png">
+								</a>
+								<a href="" class="table-menu">
+									<img src="images/icon-table-menu.png">
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="checkbox" id="checkbox2" /> <label for="checkbox2"></label>
+								Dr
+							</td>
+							<td>Bernadette Hohenstein</td>
+							<td>96496 Coburg, Lorem ipsum, Loreeem</td>
+							<td>1</td>
+							<td>
+								<a href="" class="table-edit">
+									<img src="images/icon-edit.png">
+								</a>
+								<a href="" class="table-clear">
+									<img src="images/icon-clear.png">
+								</a>
+								<a href="" class="table-menu">
+									<img src="images/icon-table-menu.png">
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="checkbox" id="checkbox3" /> <label for="checkbox3"></label>
+								
+							</td>
+							<td>Bernadette Hohenstein</td>
+							<td>96496 Coburg, Lorem ipsum, Loreeem</td>
+							<td>1</td>
+							<td>
+								<a href="" class="table-edit">
+									<img src="images/icon-edit.png">
+								</a>
+								<a href="" class="table-clear">
+									<img src="images/icon-clear.png">
+								</a>
+								<a href="" class="table-menu">
+									<img src="images/icon-table-menu.png">
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="checkbox" id="checkbox4" /> <label for="checkbox4"></label>
+								
+							</td>
+							<td>Bernadette Hohenstein</td>
+							<td>96496 Coburg, Lorem ipsum, Loreeem</td>
+							<td>1</td>
+							<td>
+								<a href="" class="table-edit">
+									<img src="images/icon-edit.png">
+								</a>
+								<a href="" class="table-clear">
+									<img src="images/icon-clear.png">
+								</a>
+								<a href="" class="table-menu">
+									<img src="images/icon-table-menu.png">
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="checkbox" id="checkbox5" /> <label for="checkbox5"></label>
+								
+							</td>
+							<td>Bernadette Hohenstein</td>
+							<td>96496 Coburg, Lorem ipsum, Loreeem</td>
+							<td>1</td>
+							<td>
+								<a href="" class="table-edit">
+									<img src="images/icon-edit.png">
+								</a>
+								<a href="" class="table-clear">
+									<img src="images/icon-clear.png">
+								</a>
+								<a href="" class="table-menu">
+									<img src="images/icon-table-menu.png">
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="checkbox" id="checkbox6" /> <label for="checkbox6"></label>
+								
+							</td>
+							<td>Bernadette Hohenstein</td>
+							<td>96496 Coburg, Lorem ipsum, Loreeem</td>
+							<td>1</td>
+							<td>
+								<a href="" class="table-edit">
+									<img src="images/icon-edit.png">
+								</a>
+								<a href="" class="table-clear">
+									<img src="images/icon-clear.png">
+								</a>
+								<a href="" class="table-menu">
+									<img src="images/icon-table-menu.png">
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="checkbox" id="checkbox7" /> <label for="checkbox7"></label>
+								
+							</td>
+							<td>Bernadette Hohenstein</td>
+							<td>96496 Coburg, Lorem ipsum, Loreeem</td>
+							<td>1</td>
+							<td>
+								<a href="" class="table-edit">
+									<img src="images/icon-edit.png">
+								</a>
+								<a href="" class="table-clear">
+									<img src="images/icon-clear.png">
+								</a>
+								<a href="" class="table-menu">
+									<img src="images/icon-table-menu.png">
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="checkbox" id="checkbox8" /> <label for="checkbox8"></label>
+								
+							</td>
+							<td>Bernadette Hohenstein</td>
+							<td>96496 Coburg, Lorem ipsum, Loreeem</td>
+							<td>1</td>
+							<td>
+								<a href="" class="table-edit">
+									<img src="images/icon-edit.png">
+								</a>
+								<a href="" class="table-clear">
+									<img src="images/icon-clear.png">
+								</a>
+								<a href="" class="table-menu">
+									<img src="images/icon-table-menu.png">
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="checkbox" id="checkbox9" /> <label for="checkbox9"></label>
+								
+							</td>
+							<td>Bernadette Hohenstein</td>
+							<td>96496 Coburg, Lorem ipsum, Loreeem</td>
+							<td>1</td>
+							<td>
+								<a href="" class="table-edit">
+									<img src="images/icon-edit.png">
+								</a>
+								<a href="" class="table-clear">
+									<img src="images/icon-clear.png">
+								</a>
+								<a href="" class="table-menu">
+									<img src="images/icon-table-menu.png">
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="checkbox" id="checkbox10" /> <label for="checkbox10"></label>
+								
+							</td>
+							<td>Bernadette Hohenstein</td>
+							<td>96496 Coburg, Lorem ipsum, Loreeem</td>
+							<td>1</td>
+							<td>
+								<a href="" class="table-edit">
+									<img src="images/icon-edit.png">
+								</a>
+								<a href="" class="table-clear">
+									<img src="images/icon-clear.png">
+								</a>
+								<a href="" class="table-menu">
+									<img src="images/icon-table-menu.png">
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="checkbox" id="checkbox11" /> <label for="checkbox11"></label>
+								
+							</td>
+							<td>Bernadette Hohenstein</td>
+							<td>96496 Coburg, Lorem ipsum, Loreeem</td>
+							<td>1</td>
+							<td>
+								<a href="" class="table-edit">
+									<img src="images/icon-edit.png">
+								</a>
+								<a href="" class="table-clear">
+									<img src="images/icon-clear.png">
+								</a>
+								<a href="" class="table-menu">
+									<img src="images/icon-table-menu.png">
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="checkbox" id="checkbox9" /> <label for="checkbox9"></label>
+								
+							</td>
+							<td>Bernadette Hohenstein</td>
+							<td>96496 Coburg, Lorem ipsum, Loreeem</td>
+							<td>1</td>
+							<td>
+								<a href="" class="table-edit">
+									<img src="images/icon-edit.png">
+								</a>
+								<a href="" class="table-clear">
+									<img src="images/icon-clear.png">
+								</a>
+								<a href="" class="table-menu">
+									<img src="images/icon-table-menu.png">
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="checkbox" id="checkbox10" /> <label for="checkbox10"></label>
+								
+							</td>
+							<td>Bernadette Hohenstein</td>
+							<td>96496 Coburg, Lorem ipsum, Loreeem</td>
+							<td>1</td>
+							<td>
+								<a href="" class="table-edit">
+									<img src="images/icon-edit.png">
+								</a>
+								<a href="" class="table-clear">
+									<img src="images/icon-clear.png">
+								</a>
+								<a href="" class="table-menu">
+									<img src="images/icon-table-menu.png">
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="checkbox" id="checkbox11" /> <label for="checkbox11"></label>
+								
+							</td>
+							<td>Bernadette Hohenstein</td>
+							<td>96496 Coburg, Lorem ipsum, Loreeem</td>
+							<td>1</td>
+							<td>
+								<a href="" class="table-edit">
+									<img src="images/icon-edit.png">
+								</a>
+								<a href="" class="table-clear">
+									<img src="images/icon-clear.png">
+								</a>
+								<a href="" class="table-menu">
+									<img src="images/icon-table-menu.png">
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="checkbox" id="checkbox9" /> <label for="checkbox9"></label>
+								
+							</td>
+							<td>Bernadette Hohenstein</td>
+							<td>96496 Coburg, Lorem ipsum, Loreeem</td>
+							<td>1</td>
+							<td>
+								<a href="" class="table-edit">
+									<img src="images/icon-edit.png">
+								</a>
+								<a href="" class="table-clear">
+									<img src="images/icon-clear.png">
+								</a>
+								<a href="" class="table-menu">
+									<img src="images/icon-table-menu.png">
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="checkbox" id="checkbox10" /> <label for="checkbox10"></label>
+								
+							</td>
+							<td>Bernadette Hohenstein</td>
+							<td>96496 Coburg, Lorem ipsum, Loreeem</td>
+							<td>1</td>
+							<td>
+								<a href="" class="table-edit">
+									<img src="images/icon-edit.png">
+								</a>
+								<a href="" class="table-clear">
+									<img src="images/icon-clear.png">
+								</a>
+								<a href="" class="table-menu">
+									<img src="images/icon-table-menu.png">
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="checkbox" id="checkbox11" /> <label for="checkbox11"></label>
+								
+							</td>
+							<td>Bernadette Hohenstein</td>
+							<td>96496 Coburg, Lorem ipsum, Loreeem</td>
+							<td>1</td>
+							<td>
+								<a href="" class="table-edit">
+									<img src="images/icon-edit.png">
+								</a>
+								<a href="" class="table-clear">
+									<img src="images/icon-clear.png">
+								</a>
+								<a href="" class="table-menu">
+									<img src="images/icon-table-menu.png">
+								</a>
+							</td>
+						</tr>
 
-				<div class="btn-box">
-					<button class="btn">Alle auswahlen</button>
-					<select class="js-example-basic-single">
-					  <option value="AL">Auswahl bearbeiten</option>
-					  <option value="WY">Lorem ipsum</option>
-					  <option value="WY">Lorem ipsum</option>
-					  <option value="WY">Lorem ipsum</option>
-					</select>
-					<button class="btn btn-add">Neue Person</button>
+					</table>
 				</div>
-				
-				<div class="page-block">
-					<select class="js-example-basic-single">
-					  <option value="AL">20</option>
-					  <option value="WY">19</option>
-					  <option value="WY">18</option>
-					</select>
+
+				<div class="btn-container">
+					<div class="btn-box">
+						<button class="btn">Alle auswahlen</button>
+						<select class="js-example-basic-single">
+						  <option value="AL">Auswahl bearbeiten</option>
+						  <option value="WY">Lorem ipsum</option>
+						  <option value="WY">Lorem ipsum</option>
+						  <option value="WY">Lorem ipsum</option>
+						</select>
+						<button class="btn btn-add">Neue Person</button>
+					</div>
+					
+					<div class="page-block">
+						<select class="js-example-basic-single">
+						  <option value="AL">20</option>
+						  <option value="WY">19</option>
+						  <option value="WY">18</option>
+						</select>
+					</div>
+					<div class="pagination">
+						<a href="" class="pagination-prev">Seite</a>
+						<input type="text" />
+						<a href="" class="pagination-next">von 26</a>
+					</div>
 				</div>
-				<div class="pagination">
-					<a href="" class="pagination-prev">Seite</a>
-					<input type="text" />
-					<a href="" class="pagination-next">von 26</a>
-				</div>
+
 			</div>
 		</div>
 	</div>
@@ -363,10 +537,14 @@
 	<script>
 		(function($){
 			$(window).load(function(){
-				
 				$("aside").mCustomScrollbar({
 					theme:"minimal"
 				});
+				$(".table-container").mCustomScrollbar({
+					theme:"minimal"
+				}); 
+				
+
 				
 			});
 		})(jQuery);
